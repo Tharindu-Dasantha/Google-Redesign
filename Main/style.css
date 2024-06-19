@@ -81,8 +81,8 @@ header {
 /* Styling the profile picture part */
 .shortcutItems_navbar_profile {
     background-color: #333;
-    height: 50px;
-    width: 50px;
+    height: 45px;
+    width: 45px;
     border-radius: 50%;
     cursor: pointer;
     display: flex;
@@ -103,4 +103,44 @@ header {
 
 .profile-initials {
     text-transform: uppercase;
+}
+
+/* Styling the footer section */
+footer {
+    display: fixed;
+    position: absolute;
+    bottom: 0;
+    width: 97.4vw;
+    padding: 10px 30px;
+    margin-bottom: 10px;
+}
+
+.footerContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutSection ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.aboutSection ul li {
+    cursor: pointer;
+}
+
+.aboutSection ul li a {
+    all: unset;
+    font-size: 16px;
+}
+
+.settings {
+    cursor: pointer;
 }
