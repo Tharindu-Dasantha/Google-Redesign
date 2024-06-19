@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -110,7 +111,7 @@ footer {
     display: fixed;
     position: absolute;
     bottom: 0;
-    width: 97.4vw;
+    width: 96.9vw;
     padding: 10px 30px;
     margin-bottom: 10px;
 }
@@ -143,4 +144,16 @@ footer {
 
 .settings {
     cursor: pointer;
+}
+
+.Country {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: default;
+}
+
+.Country_name {
+    text-transform: uppercase;
 }
