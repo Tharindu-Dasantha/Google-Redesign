@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: fixed;
+}
+
+/* Style for the header main contents */
+.header_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Style for the burger menue */
+.burger-menu {
+    /* center the lines */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* additional styles */
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.burger_Icon {
+    position: relative;
+    width: 30px;
+    height: 24px;
+}
+
+.burger_line {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #333;
+    transition: transform 0.3s opacity 0.3s;
+}
+
+/* Changing the placements of the 3 lines */
+.burger_line:nth-child(1) {
+    top:0;
+}
+
+.burger_line:nth-child(2) {
+    top: 45%;
+}
+
+.burger_line:nth-child(3) {
+    bottom: 0;
+}
+
+.burger-menu.active .burger_line:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.burger-menu.active .burger_line:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-menu.active .burger_line:nth-child(3) {
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+/* Styling the profile picture part */
