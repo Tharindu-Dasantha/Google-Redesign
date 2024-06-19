@@ -1,77 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TD's Google Search</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- Header section -->
     <header>
-        <div class="header_content">
-            <!-- left conner burger menu -->
-            <div class="burger-menu">
-                <!-- creating the icon of the burger menu -->
-                <div class="burger_Icon">
-                    <div class="burger_line"></div>
-                    <div class="burger_line"></div>
-                    <div class="burger_line"></div>
-                </div>
-            </div>
-
-            <!-- right conner item elements-->
-            <div class="shortcutItems_navbar">
-                <a href="https://mail.google.com/mail/">
-                    <img src="../assets/Icons/Gmail.png" alt="Gmail icon">
-                </a>
-                <a href="https://gemini.google.com/">
-                    <img src="../assets/Icons/Labs.png" alt="google labs icon">
-                </a>
-                <div class="shortcutItems_navbar_profile">
-                    <div class="profile-image">
-                        <span class="profile-initials"></span>
-                    </div>
-                </div>
-            </div>
+      <div class="header_content">
+        <!-- left conner burger menu -->
+        <div class="burger-menu">
+          <!-- creating the icon of the burger menu -->
+          <div class="burger_Icon">
+            <div class="burger_line"></div>
+            <div class="burger_line"></div>
+            <div class="burger_line"></div>
+          </div>
         </div>
+
+        <!-- right conner item elements-->
+        <div class="shortcutItems_navbar">
+          <a href="https://mail.google.com/mail/">
+            <img src="../assets/Icons/Gmail.png" alt="Gmail icon" />
+          </a>
+          <a href="https://gemini.google.com/">
+            <img src="../assets/Icons/Labs.png" alt="google labs icon" />
+          </a>
+          <div class="shortcutItems_navbar_profile">
+            <div class="profile-image">
+              <span class="profile-initials"></span>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
     <!-- Main page elements -->
-    <main></main>
+    <main>
+      <div class="background">
+        <div class="backgroundText">google</div>
+      </div>
+
+      <!-- Search elements -->
+      <div class="mainContent">
+        <!-- good moring part -->
+        <div class="greeting">
+          <div class="googlelogo">
+            <img src="../assets/Icons/GoogleLogo.png" alt="" />
+          </div>
+          <div class="greetingwords">
+            <!-- later change the name to auto change according to the name in the dropdown -->
+            <span class="userName">Tharindu,</span>
+            <!-- Later change to morning to change according to the current time -->
+            <span class="morningGreeting">Good Morning</span>
+          </div>
+        </div>
+        <!-- search bar -->
+         <div class="SearchBar">
+            <form action="https://www.google.com/search">
+                <div class="icons">
+                    <div class="searchicon">
+                        <img src="../assets/Icons/search.png" alt="">
+                    </div>
+                    <div class="accessIcons">
+                        <img src="../assets/Icons/mic.png" alt="">
+                        <img src="../assets/Icons/cam.png" alt="">
+                    </div>
+                </div>
+                <input type="text" class="searchinput" placeholder="Serach here..." name="q">
+            </form>
+         </div>
+      </div>
+    </main>
 
     <!-- Footer of the page -->
     <footer>
-        <div class="footerContent">
-            <div class="aboutSection">
-                <ul>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Business</a>
-                    </li>
-                    <li>
-                        <a href="#">Advertising</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="searchChangeSection">
-                <div class="Country">
-                    <img src="../assets/Icons/location.png" alt="">
-                    <span class="Country_name">Sri Lanka</span>
-                </div>
-                <div class="SearchChangeButtons"></div>
-            </div>
-
-            <div class="settings">
-                <img src="../assets/Icons/Settings.png" alt="setting icon">
-            </div>
+      <div class="footerContent">
+        <div class="aboutSection">
+          <ul>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Business</a>
+            </li>
+            <li>
+              <a href="#">Advertising</a>
+            </li>
+          </ul>
         </div>
+
+        <div class="searchChangeSection">
+          <div class="Country">
+            <img src="../assets/Icons/location.png" alt="" />
+            <span class="Country_name">Sri Lanka</span>
+          </div>
+          <div class="SearchChangeButtons">
+            <div class="SearchButton button_red"></div>
+            <div class="SearchButton button_yellow"></div>
+            <div class="SearchButton button_green"></div>
+            <div class="SearchButton button_blue"></div>
+          </div>
+        </div>
+
+        <div class="settings">
+          <img src="../assets/Icons/Settings.png" alt="setting icon" />
+        </div>
+      </div>
     </footer>
 
     <!-- adding the scripts -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

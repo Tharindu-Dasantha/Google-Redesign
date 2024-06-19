@@ -119,6 +119,7 @@ footer {
 .footerContent {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .aboutSection {
@@ -146,6 +147,14 @@ footer {
     cursor: pointer;
 }
 
+.searchChangeSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .Country {
     display: flex;
     justify-content: center;
@@ -156,4 +165,126 @@ footer {
 
 .Country_name {
     text-transform: uppercase;
+}
+
+.SearchChangeButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.SearchButton {
+    width: 80px;
+    height: 8px;
+    background-color: #333;
+    cursor: pointer;
+}
+
+.button_red {
+    background-color: #EB4335;
+}
+
+.button_yellow {
+    background-color: #FBBC05;
+}
+
+.button_green {
+    background-color: #34A853;
+}
+
+.button_blue {
+    background-color: #4285F4;
+}
+
+/* Style for the main elements */
+/* Creating the background */
+.background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.backgroundText {
+    text-transform: uppercase;
+    font-size: 250px;
+    letter-spacing: 10px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #55575A;
+    opacity: 0.15;
+}
+
+/* Style for the main content */
+.mainContent {
+    height: 87%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* background-color: #333; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.greeting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.greetingwords {
+    display: flex;
+    flex-direction: column;
+}
+
+span.userName {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+span.morningGreeting {
+    font-size: 18px;
+    font-weight: 300;
+    padding-left: 15px;
+}
+
+/* search bar */
+input[type="text"] {
+    background-color: transparent;
+    border: none;
+    width: 630px;
+    height: 47px;
+    z-index: 1;
+    position: relative;
+    bottom: 50px;
+    border-radius: 30px;
+    font-size: 25px;
+    padding-left: 55px;
+}
+
+.searchicon img {
+    width: 35px;
+    padding-top: 3px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 15px;
+    width: 650px;
+    border: 2px solid #F2F2F2;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
